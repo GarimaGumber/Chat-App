@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ChatApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_message">No Message</string>
+    <string name="txt_seen">Seen</string>
+    <string name="txt_delivered">Delivered</string>
+</resources>

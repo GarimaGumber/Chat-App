@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_layout"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_below="@id/toolbar"
+       android:gravity="center_horizontal"
+       android:padding="22dp">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Create a new account"
+           android:textColor="@color/colorPink"
+           android:textSize="26sp"
+           android:textStyle="bold"/>
+
+       <EditText
+           android:id="@+id/register_activity_username"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="60dp"
+           android:padding="15dp"
+           android:background="@drawable/edit_background"
+           android:hint="Username"/>
+
+       <EditText
+           android:id="@+id/register_activity_email"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:padding="15dp"
+           android:ems="10"
+           android:inputType="textEmailAddress"
+           android:background="@drawable/edit_background"
+           android:hint="Email"/>
+
+       <EditText
+           android:id="@+id/register_activity_pass"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:padding="15dp"
+           android:ems="10"
+           android:inputType="textPassword"
+           android:background="@drawable/edit_background"
+           android:hint="Password"/>
+
+       <Button
+           android:id="@+id/register_activity_btn_register"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="60dp"
+           android:text="Register"
+           android:background="@drawable/button_selector"
+           android:textColor="@android:color/white"
+           android:enabled="false"
+           android:padding="15dp"
+           android:textSize="20sp"
+           android:textStyle="bold"/>
+
+   </LinearLayout>
+
+</RelativeLayout>
